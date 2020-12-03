@@ -1,0 +1,99 @@
+<!Doctype html>
+<html lang="el">
+<head> 
+	<title>Τραγανός Κάβουρας</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="ask1.css">
+</head>
+
+<body>
+
+   <header>
+		<h1>Ο Τραγανός Κάβουρας</h1>
+	
+   </header>
+   <br/>
+   
+
+   <aside> <p><b>Γνωρίστε μας καλύτερα </b></p>
+   <!-- links σε εξωτερικούς συνδέσμους που ζητάει η άσκηση.-->
+		<p><a href="https://www.facebook.com/Mr.Krabs/"> Ευγένιος Καβούρης </a><br/>
+		<a href="https://www.facebook.com/Squidward/"> Καλαμάρης Πλοκάμιας</a> <br/>
+		<a href="https://www.facebook.com/spongebob/"> Μπομπ Σφουγγαράκης</a><br/>
+		</p>
+		<p>-----------</p>
+		<p><b>Επικοινωνήστε μαζί μας</b></p>	
+		<a href= "mailto:achrisa39@gmail.com"> Επικοινωνία </a>
+		<br/>
+		<!-- link σε εσωτερικούς σύνδεσμους που ζητάει η άσκηση-->
+		<a href= "form.html"> Πείτε μας τη γνώμη σας </a>
+   </aside>
+   
+   <nav>
+		<p><b>Περιηγηθείτε στον ιστότοπο</b></p>	
+		<p><a href="page2.html">Δείτε τις προσφορές μας </a></p>
+   </nav>
+   
+   <article> 
+   
+		<h2>Το Εστιατόριο</h2>
+			<p>  Ο Τραγανός Κάβουρας είναι το πιο δημοφιλές εστιατόριο στο βυθό του Μπικίνι. 
+			Χιλιάδες πελάτες συρρέουν καθημερινά, προκειμένου να δοκιμάσουν την περίφημη 
+				<a href="https://spongebob.fandom.com/wiki/Krabby_Patty"> Καβουροπάτι</a>
+				η κατανάλωση της οποίας λέγεται ότι κάνει καλό στην ψυχή
+			</p>
+			<!-- o explorer και ο edge δεν υποστηρίζουν το details, οπότε εμφανίζεται ολόκληρη η λίστα. Στους άλλους browser που το υποστηρίζουν φαίνεται πιο όμορφα-->
+		<details> 
+			<summary>
+			Μυστική Συνταγή της Καβουροπάτι
+			</summary>
+			<ol> <!-- ordered list που ζητάει η άσκηση-->
+				<li> Φρέσκο ψωμάκι
+				</li>
+				<li> Πίκλες
+				</li>
+				<li> Ντομάτα
+				</li>
+				<li> Κρεμμύδια
+				</li>
+				<li> Κασέρι
+				</li>
+				<li> Κέτσαπ-Μουστάρδα
+				</li>
+				<li> Αγάπη
+				</li>
+				<li>
+					<details> 
+						<summary> Μυστικά συστατικά
+						</summary>
+						<ul> <!-- unordered list εντός της ordered list που ζητάει η άσκηση-->
+						<li><b><u>Είναι μυστικά λέμε!!!!!</u></b></li>
+						</ul>
+					</details>
+				</li>
+			</details>
+			</ol>
+		<img src="images/traganoskavouras.png" alt="traganoskavouras"> 
+			<p> Ιδρυτής και ιδιοκτήτης του Τραγανού Κάβουρα είναι ο γνωστός επιχειρηματίας 
+			<a href="https://spongebob.fandom.com/wiki/Eugene_H._Krabs">Κύριος Ευγένιος Χάρολντ Καβούρης,</a>
+			ο οποίος επίσης επινόησε και τη συνταγή της Καβουροπάτι. Πάντα πρόθυμοι και εξυπηρετικοί σας περιμένουν οι υπάλληλοι
+			του καταστήματός μας: o ταλαντούχος μάγειρας Μπομπ Σφουγγαράκης και ο  ευγενικός και κεφάτος Καλαμάρης Πλοκάμιας. 
+			Εκτός από την διάσημη Καβουροπάτι, μπορείτε επίσης να απολαύσετε το υπόλοιπο πλούσιο μενού,
+			που περιλαμβάνει πλήθος γευστικών και ποιοτικών πιάτων σε καταπληκτικές τιμές στην 
+			θρυλικά χαλαρωτική ατμόσφαιρα του καταστήματος</p>
+			<br/>
+		<!-- o Chrome δεν υποστηρίζει το autoplay στο audio που μας ζητάει η άσκηση. Επειδή όμως ήθελα να παίζει αυτόματα ο ήχος, 
+		έβαλα με iframe ένα μικρό σιωπηλό αρχείο ήχου-->
+		<iframe src="silence.mp3" allow="autoplay" id="audio" style=display:none;></iframe>
+		<audio controls loop autoplay>
+			<source src="HawaiianBreeze.mp3"  type="audio/mpeg">
+		</audio>	
+   </article>
+
+    <footer> Copyright &copy; 2019 Crysoula Andreadou
+	</footer> 
+	
+</body>
+</html>
+
+

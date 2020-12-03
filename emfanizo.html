@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<!-- Το layout το έκανα όπως στην εικόνα της εργασίας, δηλαδή το άφησα όπως στην άσκηση που κάναμε στο μάθημα. 
+		Θα μπορούσα εύκολα να το κάνω με το ίδιο layout που έχουν οι υπόλοιπες σελίδες-->
+		
+<html lang="el">
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="ask1.css">
+		<title>Apotelesmata</title>
+	</head>
+	<body>
+		<h1  class="emfanizoh1"> Φόρμα Επικοινωνίας-Απαντήσεις</h1>
+		<br/>
+		<div class="apantiseis" id="apantiseis"> <p> Ευχαριστούμε πολύ! Προσπαθούμε πάντα να γινόμαστε καλύτεροι! Οι απαντήσεις σας ήταν:</p> 
+		                 <br/>-------------------------------------------------------------------- </div>
+ <script>
+  // Utilities
+		
+ 
+
+var qd = {};
+location.search.substr(1).split("&").forEach(
+function(item) {
+var k = item.split("=")[0], v = decodeURIComponent(item.split("=")[1]); (k in qd) ? qd[k].push(v) : qd[k] = [v]}
+)
+
+//split method Split a string into an array of substrings
+//The in operator returns true if the specified property is in the specified object or its prototype chain
+//decodeURIComponent μεταφράζει το URL με τα μπαρμπαδάκια % κλπ σε κανονικό κείμενο στα κομμάτια
+//condition ? exprIfTrue : exprIfFalse 
+	
+		
+		// AppendTo(ID,TEXT) adds the text to the element with ID.
+		function appendTo(ID,Text){
+			var x = document.getElementById(ID);
+			x.innerHTML = x.innerHTML + "<br/> - " + Text + "<br />";
+		}
+//replace, αντικαθιστά το πρώτο στην παρένθεση με το δεύτερο με g αντικαθιστά παντού όχι όμως case sensitive
+// \+ σημαίνει ότι το + μετράει για κανονικός χαρακτήρας κι όχι ειδικός χαρακτήρας https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+// όλο αυτό σημαίνει ότι ο όχι ειδικός χαρακτήρας + θα αντικατασταθεί από κενό δηλαδή θα σβηστεί στο πεδίο όνοματεπώνυμο και σχόλια που έχει πολλές λέξεις και στο URL ενώνονται με +
+
+
+var first = qd.name;
+first = first.toString().replace(/\+/g, " ");
+var second = qd.email;
+var third = qd.ypallhlos;
+var fourth = qd.category;
+var fifth = qd.nationality;
+var sixth = qd.comments;
+sixth = sixth.toString().replace(/\+/g, " ");
+        appendTo("apantiseis", first);
+		appendTo("apantiseis", second);
+		appendTo("apantiseis", third);
+		appendTo("apantiseis", fourth);
+		appendTo("apantiseis", fifth);
+		appendTo("apantiseis", sixth);
+		
+
+	</script>  
+
+
+
+	</body>
+</html>

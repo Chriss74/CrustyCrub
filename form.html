@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="el">
+<meta charset="UTF-8">
+  <head>
+  <!--έκανα εξωτερικό αρχείο javascript για τους ελέγχους. Η άσκηση έλεγε ότι δεν είναι υποχρεωτικό να είναι στο ίδιο αρχείο-->
+  <script src="./testscript.js"></script>
+    <title>Φόρμα Eπικοινωνίας</title>
+	
+	<link rel="stylesheet" type="text/css" href="ask1.css">
+    
+  </head>
+  <body>
+  
+<header>
+		<h1>Φόρμα Επικοινωνίας</h1>
+   </header><br/>
+
+  <aside> <p><b>Γνωρίστε μας καλύτερα</b></p>
+		<p><a href="https://www.facebook.com/Mr.Krabs/"> Ευγένιος Καβούρης </a><br/>
+		<a href="https://www.facebook.com/Squidward/"> Καλαμάρης Πλοκάμιας</a> <br/>
+		<a href="https://www.facebook.com/spongebob/"> Μπομπ Σφουγγαράκης</a><br/>
+		</p>
+		<p>-----------</p>
+		<p><b>Επικοινωνήστε μαζί μας</b></p>
+		<a href= "mailto:achrisa39@gmail.com"> Επικοινωνία </a>
+		<br/>
+   </aside>
+   <nav>
+		<p><b>Περιηγηθείτε στον ιστότοπο</b></p>	
+		<p> <a href="index.html">Επιστροφή στην αρχική σελίδα </a></p>
+		<p> <a href="page2.html">Δείτε τις προσφορές μας </a> </p>
+		<!-- τακτοποίησα το problemarea στο navigation bar γιατί έβγαινε μέσα στη μέση κι ήταν άσχημο-->
+		<p class="problemarea" id=problemArea></p>
+   </nav>
+
+	
+   <article> <h2>Παρακαλώ, συμπληρώστε τα παρακάτω στοιχεία:</h2>
+   <br/>
+
+    <form name="gbForm" method = "get" action = "emfanizo.html" >
+
+    <div class="formlabel">Ποιό είναι το ονοματεπώνυμό σας;</div>
+    <div class="formfield"><input type="text" name="name"
+       size="50" required /></div>
+
+    <div class="formlabel">Ποιά είναι η e-mail σας διεύθυνση;</div>
+    <div class="formfield"><input type="email" name="email"
+       size="50" /></div>
+
+	<div class="formlabel">Αγαπημένος υπάλληλος:</div>
+    <div class="formfield">
+       <input type="radio" name="ypallhlos" value="<3Αφεντικό-Καβούρης" />Το αφεντικό ο Κύριος Καβούρης<br />
+       <input type="radio" name="ypallhlos" value="<3Υπάλληλος-Καλαμάρης" />Καλαμάρης Πλοκάμιας<br />
+       <input type="radio" name="ypallhlos" value="<3Υπάλληλος-Μπομπ" />Μπόμπ Σφουγγαράκης<br />
+       
+    </div>
+    <div class="formlabel">Αγαπημένο γεύμα:</div>
+    <div class="formfield">
+       <input type="checkbox" name="category" value="<3Καβουροπάτι" />Καβουροπάτι<br />
+       <input type="checkbox" name="category" value="<3KelpFries" />Kelp fries<br />
+       <input type="checkbox" name="category" value="<3KelpShake" />Kelp Shake<br />
+       <input type="checkbox" name="category" value="<3ClubSandwitch" />Club Sandwitch<br />
+    </div>
+
+   <div class="formlabel">Ποια Κουζίνα προτιμάτε:</div>
+    <div class="formfield">
+      <select size="4" name="nationality">
+        <option value="<3Ελληνική-Κουζίνα" selected="selected">Ελληνική</option>
+        <option value="<3Γαλλική-Κουζίνα">Γαλλική</option>
+        <option value="<3Ασιατική-Κουζίνα">Ασιατική</option>
+        <option value="<3 Αλλη-Κουζίνα">'Αλλη</option>
+       
+      </select>
+    </div>
+
+
+    <div class="formlabel">Κριτική, απόψεις, γνώμες και προτάσεις:</div>
+    <div class="formfield">
+      <textarea name="comments" rows="5" cols="55"></textarea> 
+    </div>
+
+    <div style="clear: left;">
+	   <input type="submit" value="Υποβολή" onclick="return checkForm(); "/>
+       <input type="reset" value="Καθάρισμα" />
+    </div>
+    </form>
+	</article>
+	 <footer> Copyright &copy; 2019 Crysoula Andreadou
+	</footer> 
+  </body>
+</html>
